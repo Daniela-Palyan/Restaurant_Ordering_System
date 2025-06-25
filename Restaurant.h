@@ -1,7 +1,11 @@
-#include "Menu.h"
-#include "Customer.h"
-#include "Order.h"
+#ifndef Menu_H
+#define Menu_H
+
 #include <vector>
+#include "Menu.h"
+
+class Customer;
+class Order;
 
 class Restaurant {
 private:
@@ -21,3 +25,5 @@ public:
     void placeNewOrder(const std::string& customerName);
     void viewCustomerOrderHistory(const std::string& customerName) const;
 };
+
+#endif

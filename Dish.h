@@ -1,3 +1,8 @@
+#ifndef DISH_H
+#define DISH_H
+
+#include <string>
+
 class Dish {
 protected:
     std::string name;
@@ -14,3 +19,4 @@ public:
     std::string getName() const;
 };
 
+#endif

@@ -1,6 +1,10 @@
-#include "Dish.h"
+#ifndef ORDER_H
+#define ORDER_H
+
 #include <vector>
 class Customer;
+
+class Dish;
 
 class Order {
 private:
@@ -18,3 +22,5 @@ public:
     void calculateTotal();
     void displayOrder() const;
 };
+
+#endif

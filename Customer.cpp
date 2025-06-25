@@ -37,8 +37,6 @@ Customer& Customer::operator=(Customer&& other) noexcept
     return *this;
 }
 
-Customer::~Customer() {}
-
 void Customer::placeOrder(Order order)
 {
     orderHistory.push_back(order);
@@ -48,7 +46,7 @@ void Customer::viewOrderHistory() const
 {
     for (int i = 0; i < orderHistory.size(); i++)
     {
-        orderHistory[i]->displayOrder();
+        orderHistory[i].displayOrder();
     }
 }
 

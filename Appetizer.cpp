@@ -14,3 +14,4 @@ void Appetizer::display() const
     std::cout << "Price: " << price << std::endl;
     std::cout << "Spicy: " << (isSpicy ? "Yes" : "No") << std::endl;
 }
+

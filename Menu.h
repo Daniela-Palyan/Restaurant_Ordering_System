@@ -1,3 +1,6 @@
+#ifndef MENU_H
+#define MENU_H
+
 #include <vector>
 #include "Dish.h"
 
@@ -15,3 +18,5 @@ public:
     void displayMenu() const;
     Dish* getDishByName(const std::string& dishName) const;
 };
+
+#endif

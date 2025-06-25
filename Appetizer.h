@@ -1,4 +1,7 @@
-#include "Dish.h"
+#ifndef APPETIZER_H
+#define APPETIZER_H
+
+class Dish;
 
 class Appetizer : public Dish {
 private:
@@ -7,3 +10,5 @@ public:
     Appetizer(std::string dishName, double dishPrice, bool spicy);
     void display() const;
 };
+
+#endif

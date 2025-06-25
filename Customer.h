@@ -1,3 +1,6 @@
+#ifndef CUSTOMER_H
+#define CUSTOMER_H
+
 #include <vector>
 #include <string>
 #include "Order.h"
@@ -8,7 +11,7 @@ private:
     std::string contactInfo;
     std::vector<Order> orderHistory;
 public:
-        Customer(std::string customerName, std::string contact);
+    Customer(std::string customerName, std::string contact);
     Customer(const Customer& other);
     Customer& operator=(const Customer& other);
     Customer(Customer&& other) noexcept;
@@ -18,3 +21,5 @@ public:
     void viewOrderHistory() const;
     std::string getName() const;
 };
+
+#endif
